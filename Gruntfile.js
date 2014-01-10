@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 
        uglify: {
     build: {
-        src: 'js/build/production.js',
-        dest: 'js/build/production.min.js'
+        src: ['js/libs/*.js','js/global.js','js/vendor/*.js',], //input
+        dest: 'js/build/global.min.js' //output
     }
 },
 
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
        },
     scripts: {
         files: ['js/*.js'],
-        tasks: ['jshint', 'concat', 'uglify'],
+        tasks: ['concat', 'uglify'],
         options: {
             spawn: false,
          }
@@ -63,10 +63,7 @@ module.exports = function(grunt) {
         }
     } 
 },
-      jshint: {
-    all: [  'js/global.js']
-  }
-
+     
 
 
   });
@@ -79,11 +76,10 @@ module.exports = function(grunt) {
    grunt.loadNpmTasks('grunt-contrib-imagemin');
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.loadNpmTasks('grunt-contrib-jshint');
-
+   
   // Define your tasks here
   
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'jshint']);
+  grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass',]);
   
 
 

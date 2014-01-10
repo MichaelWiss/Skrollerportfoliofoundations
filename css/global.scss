@@ -1,8 +1,8 @@
-
 @import "../foundation.css";
 @import "../foundation.min.css";
 @import "../normalize.css";
-@import "../build/vanilla.css";
+
+
 
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700");
 
@@ -11,7 +11,7 @@ $brand-color: #3b5998;
 body{background: rgba( $brand-color, 0.5 );}
 
 html {
-	font: 100%/1.5em 'PT Sans', sans-serif;
+	font: 100%/1.5em 'Palatino Linotype', serif;
 }
 
 body {
@@ -47,10 +47,20 @@ header.band {
 	text-align: center;
 	padding: 10% 0 15% 0;
 }
+.band{
+	min-width:100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+}
+
+
 
 
 h1, h2, h3 {
-	font-family: 'PT Serif', serif;
+	font-family: 'Palatino Linotype', serif;
 	font-weight: 700;
 	text-align: center;
 }
@@ -69,7 +79,7 @@ h2 {
 
 h3 {
 	font-size: 1.1em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Palatino Linotype', serif;
 	font-weight: 700;
 	margin-bottom: 1em;
 	text-transform: uppercase;
@@ -93,6 +103,9 @@ a.button {
 	-o-transition: background 0.2s ease-out;  /* Opera 10.5Ð12.00 */
 	transition: background 0.2s ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
+
+
+
 
 a.button:hover {
 	background: #ab3009;

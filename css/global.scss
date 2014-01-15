@@ -4,7 +4,9 @@
 
 
 
-@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700");
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
 
 $brand-color: #3b5998;
 
@@ -42,7 +44,13 @@ div.band .columns {
 }
 
 header.band {
-	background: #4b371f;
+	background-image:url(../../images/Topofrock.JPG);
+		background-size: 100%;
+		-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
 	color: white;
 	text-align: center;
 	padding: 10% 0 15% 0;
@@ -54,18 +62,23 @@ header.band {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 62.5rem;
+
+    
 }
+
+
 
 
 
 
 h1, h2, h3 {
-	font-family: 'Palatino Linotype', serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	text-align: center;
 }
 
 header.band h1 {
+    color:white;
 	font-size: 3em;
 	line-height: 1em;
 	margin-bottom: 1em;
@@ -146,8 +159,14 @@ footer {
 	}
 
 	header.band {
-		background-image:url(../../images/background.jpg);
+		background-image:url(../../images/Topofrock.JPG);
 		background-size: 100%;
+		-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+
 	}
 	
 	header.band h1 {
@@ -167,3 +186,13 @@ footer {
 	}
 
 }
+
+.nav { text-align: center; }
+
+.sub-nav{ display: inline-block;}
+.sub-nav a{margin:0 auto;
+padding:0;
+}
+.sub-nav a:first-child{margin-left: -13px;}
+
+

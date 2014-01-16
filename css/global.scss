@@ -78,10 +78,13 @@ h1, h2, h3 {
 }
 
 header.band h1 {
-    color:#EEE1D0;
-	font-size: 3em;
+    color:#FEFAF3;
+	font-size: 6em;
 	line-height: 1em;
 	margin-bottom: 1em;
+	
+  
+  text-align: center; 
 }
 
 h2 {
@@ -132,6 +135,9 @@ footer {
 	text-align: center;
 }
 
+
+#slideLeft{visibility: hidden;}
+
 .last a {
 	margin: 0 1em;	
 }
@@ -173,7 +179,7 @@ background-position:center;
 	}
 	
 	header.band h1 {
-		font-size: 3.25em; /*52 / 16*/
+		font-size: 4.5em; /*52 / 16*/
 	}
 	
 	a.button {
@@ -201,6 +207,95 @@ font-family: 'Raleway', sans-serif;
 }
 dl.sub-nav a:hover{color:#BA9F88; 
 
+}
+@media only screen and (min-width: 768px) { 
+header.band h1 {
+		font-size: 5em; /*52 / 16*/
+	}
+}
+@media only screen and (max-width: 768px) {
+header.band h1 {
+		font-size: 2.5em; /*52 / 16*/
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+
+header.band h1 {
+    
+	font-size: 2em;
+	}
+
+.sub-nav a{font-size: 0.555rem;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+header.band h1 {
+    font-size: 2em;
+	}
+.sub-nav a{font-size: 0.555rem;}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+header.band h1 {
+    font-size: 3.5em;
+	}
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
 
 

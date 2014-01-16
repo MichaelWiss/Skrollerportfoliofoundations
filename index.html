@@ -9,6 +9,8 @@
     
      <link rel="stylesheet" href="css/build/global.css"/>
      <link rel="stylesheet" href="css/hover-min.css"/>
+     <link rel="stylesheet" href="css/animations.css">
+     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
      
      
      <script src="js/modernizr.js"></script>
@@ -25,9 +27,9 @@
        <header class="band" id="home">
 
   <div class="row">
-      <div class="small-12 columns" data-0="opacity: 1" data-180="opacity: 0">
-        <a name="arrival2"></a><h1 data-magellan-destination="arrival2">MICHAEL WISS NYC</h1>
-        <a href="http://michaelrwiss.com" class="button outline-outward" target="_blank">My Portfolio</a>
+      <div class="small-12 columns" data-0="opacity: 1; font-size:110%;" data-180="opacity: 0; font-size:70%;">
+        <h1>MICHAEL WISS NYC</h1>
+        <a href="http://michaelrwiss.com" class="button outline-outward"  target="_blank">My Portfolio</a>
         
       </div>
     </div>
@@ -96,7 +98,7 @@
   <hr>
 
       
-      <div class="small-5 small-offset-1  columns">
+      <div class="small-5 small-offset-1  columns" id="slideLeft">
       
         <h3>Put the kettle on</h3>
         
@@ -150,7 +152,11 @@
 <script src="js/build/global.min.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation/magellan.js"></script>
+<script src="js/libs/jquery.fittext.js"></script>
 
+<script>
+  jQuery("#responsive_headline").fitText();
+</script>
 
 
     <script>
@@ -158,6 +164,19 @@
        threshold: 0
     </script>
   </main>
+
+  <script>
+  $(window).scroll(function() {
+    $('#slideLeft').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+300) {
+        $(this).addClass("slideRight");
+      }
+    });
+  });
+</script>
   </body>
 </html>
     

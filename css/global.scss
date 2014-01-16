@@ -8,7 +8,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
 
-$brand-color: #3b5998;
+$brand-color: #FEFAF3;
 
 body{background: rgba( $brand-color, 0.5 );}
 
@@ -78,7 +78,7 @@ h1, h2, h3 {
 }
 
 header.band h1 {
-    color:white;
+    color:#EEE1D0;
 	font-size: 3em;
 	line-height: 1em;
 	margin-bottom: 1em;
@@ -100,15 +100,18 @@ h3 {
 }
 
 a.button {
-	background: #e33f0c;
+	background: #e1e1e1;
 	text-align: center;
 	padding: .5em 1em;
-	color: white;
+	color: black;
 	font-weight: bold;
 	text-decoration: none;
-	box-shadow: 0 0.2em 0 #ab3009;
+	/*box-shadow: 0 0.2em 0 #AEA8A3;*/
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	border-style:solid;
+    border-width:5px;
+    border-color:#D9C4A7;
 		
 	/*transition cross-browser stuff*/
 	-webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
@@ -121,7 +124,7 @@ a.button {
 
 
 a.button:hover {
-	background: #ab3009;
+	background: #D9C4A7;
 }
 
 footer {
@@ -187,12 +190,18 @@ background-position:center;
 
 }
 
-.nav { text-align: center; }
+.nav { text-align: center; background-color:#EEE1D0;}
 
 .sub-nav{ display: inline-block;}
 .sub-nav a{margin:0 auto;
 padding:0;
+font-weight:bold;
+font-family: 'Raleway', sans-serif;
+
 }
-.sub-nav a:first-child{margin-left: -13px;}
+dl.sub-nav a:hover{color:#BA9F88; 
+
+}
+
 
 

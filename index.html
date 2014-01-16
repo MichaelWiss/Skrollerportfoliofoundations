@@ -8,6 +8,8 @@
    
     
      <link rel="stylesheet" href="css/build/global.css"/>
+     <link rel="stylesheet" href="css/hover-min.css"/>
+     
      
      <script src="js/modernizr.js"></script>
     <!--[if lt IE 9]>
@@ -20,12 +22,12 @@
 
    
        <!--<header class="band" data-0="background-position:0px 0px;" data-600="background-position:0px -30px;">-->
-       <header class="band">
+       <header class="band" id="home">
 
   <div class="row">
       <div class="small-12 columns" data-0="opacity: 1" data-180="opacity: 0">
-        <a name="arrival2"></a><h1 data-magellan-destination="arrival2">Meaningless Pap</h1>
-        <a href="http://michaelrwiss.com" class="button" target="_blank">by Michael Wiss</a>
+        <a name="arrival2"></a><h1 data-magellan-destination="arrival2">MICHAEL WISS NYC</h1>
+        <a href="http://michaelrwiss.com" class="button outline-outward" target="_blank">My Portfolio</a>
         
       </div>
     </div>
@@ -36,10 +38,11 @@
       <div data-magellan-expedition="fixed" class="nav">
   <dl class="sub-nav">
   
-    <dd data-magellan-arrival="build"><a href="#build">Home</a></dd>
-    <dd data-magellan-arrival="js"><a href="#arrival2">About</a></dd>
-    <dd data-magellan-arrival="js"><a href="#arrival2">Resume</a></dd>
-    <dd data-magellan-arrival="js"><a href="#arrival2">Social</a></dd>
+    <dd data-magellan-arrival="build"><a href="#home" >HOME</a></dd>
+    <dd data-magellan-arrival="js"><a href="#about" >ABOUT</a></dd>
+    <dd data-magellan-arrival="js"><a href="#resume" >RESUME</a></dd>
+    <dd data-magellan-arrival="js"><a href="#social" >SOCIAL</a></dd>
+     <dd data-magellan-arrival="js"><a href="#contact" >CONTACT</a></dd>
     
   </dl>
 </div>
@@ -52,7 +55,7 @@
 
 <div class="band main">
     <div class="row">
-      <div class="small-10 small-offset-1 columns">
+      <div class="small-10 small-offset-1 columns" id="about">
 
     
 
@@ -88,7 +91,7 @@
 
 
 <div class="band main">
-  <div class="row">
+  <div class="row" id="contact">
 
   <hr>
 
@@ -152,6 +155,7 @@
 
     <script>
       $(document).foundation();
+       threshold: 0
     </script>
   </main>
   </body>

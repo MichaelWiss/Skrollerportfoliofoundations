@@ -58,12 +58,12 @@
 <div class="band main">
   <div class="row" id="name">
 
-     <div class="small-12 medium-6 medium-offset-1 large-6 large-offset-1 columns">
+     <div class="small-12 medium-6 large-6 columns">
             <h2>Michael Wiss</h2>
             <h3>Frontend Web Developer</h3>
      </div>
         
-    <div class="small-12 medium-5 large-5 columns" id="contact">
+    <div class="small-12 medium-6 large-6 columns" id="contact">
       <ul>
         <li>michael.wiss@gmail.com</li>
         <li><a href="www.michaelrwiss.com">www.michaelrwiss.com</a></li>
@@ -129,7 +129,7 @@
                                                        <h3>Fine Arts — 3.83 GPA</h3>
                                                        
           </div>
-          </div>
+      </div>
         
 
 
@@ -154,7 +154,7 @@
 
 
       </div><!--/column-->
-  </div><!--/row-->
+    </div><!--/row-->
 
 
 
@@ -172,13 +172,13 @@
 
 
 
-<div class="band main">
-  <div class="row" id="contact">
+
+  <div id="contact">
 
   <hr>
 
       
-      <div class="small-5 small-offset-1  columns" id="slideLeft">
+      <div class="small-5 small-offset-1 medium-5 medium-offset-1 large-offset-1 columns" id="slideLeft">
       
         <h3>Put the kettle on</h3>
         
@@ -186,7 +186,7 @@
       
       </div><!--/ column-->
     
-      <div class="small-5 small-offset-1   columns" id="slideRight">
+      <div class="small-5 small-offset-1 medium-5 medium-offset-1 large-5 large-offset-1 columns" id="slideRight">
       
         <h3>And he shot me</h3>
         
@@ -194,10 +194,11 @@
       
       </div><!--/column-->
   </div><!--/row-->
+  </div>
 
 
 
-<footer class="band main">
+<footer class="band">
 
    <hr>
 
@@ -251,7 +252,7 @@
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
+      if (imagePos < topOfWindow+450) {
         $(this).addClass("fadeIn");
       }
     });
@@ -264,7 +265,7 @@
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
+      if (imagePos < topOfWindow+450) {
         $(this).addClass("fadeIn");
       }
     });

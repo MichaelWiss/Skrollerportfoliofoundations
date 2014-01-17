@@ -256,11 +256,19 @@ header.band h1 {
 .sub-nav a{font-size: 0.555rem;}
 #name h2{text-align:center; margin:0 auto;}
 
+#name h2{text-align:center;}
+#name h3{text-align:center;}
+#contact{text-align:center;}
+#profile{text-align:center;}
+#skills{text-align:center;}
+#technical{text-align:center;}
+
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
-and (min-width : 321px) {
+and (min-width : 321px)
+and (max-device-width : 480px) {
 /* Styles */
 
 #name h2{text-align:center;}

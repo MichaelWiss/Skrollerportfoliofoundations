@@ -44,7 +44,7 @@
     <dd data-magellan-arrival="js"><a href="#about" >ABOUT</a></dd>
     <dd data-magellan-arrival="js"><a href="#resume" >RESUME</a></dd>
     <dd data-magellan-arrival="js"><a href="#social" >SOCIAL</a></dd>
-     <dd data-magellan-arrival="js"><a href="#contact" >CONTACT</a></dd>
+    <dd data-magellan-arrival="js"><a href="#contact" >CONTACT</a></dd>
     
   </dl>
 </div>
@@ -55,7 +55,7 @@
 
 
 
-<div class="band main">
+<div class="band main"><div id="resume">
   <div class="row" id="name">
 
      <div class="small-12 medium-6 large-6 columns">
@@ -134,20 +134,20 @@
 
 
     
-
+<div id="about">
 
       <div class="row">
-        <div class="small-10 small-offset-1 columns" id="about">
+        <div class="small-10 small-offset-1 columns" >
 
     
 
       
         
-         <p><strong>A pint 'o mild. Tell thi summat for nowt th'art nesh thee chuffin' nora eeh appens as maybe. Ey up is that thine god's own county. Be reet be reet nah then michael palin bloomin' 'eck gerritetten.</strong> Ah'll learn thi soft southern pansy. Any rooad soft southern pansy nobbut a lad mardy bum shu' thi gob face like a slapped arse. Ee by gum mardy bum michael palin. God's own county. Th'art nesh thee. Appens as maybe god's own county where's tha bin.  </p>
+         <p><strong>Welcome to my resume page!  I decided to make this page after finishing my <a href="http://www.michaelrwiss.com">portfolio</a> page and realizing that parallax and bootstrap was yesterday's news.</strong> I immediately began working on this page with the intent of using the latest tools and tricks.  </p>
     
-            <p>Aye any rooad. Th'art nesh thee is that thine tha daft apeth gi' o'er. What's that when it's at ooam that's champion nay lad tell thi summat for nowt. Dahn t'coil oil that's champion ey up sup wi' 'im where there's muck there's brass mardy bum. Be reet. Dahn t'coil oil chuffin' nora t'foot o' our stairs is that thine bloomin' 'eck chuffin' nora. Mardy bum bobbar chuffin' nora. Chuffin' nora mardy bum dahn t'coil oil nobbut a lad where there's muck there's brass bobbar. Soft lad nah then.</p>
+            <p>Foundation came out with version five so I decided to try it out.  I'm also using a basic gruntfile for image and script minification.  Today's parallax seems to be scroll activated animations so I was anxious to use <a href="http://prinzhorn.github.io/skrollr/">skrollr</a>.  I edited my code with Sublime Text and coffee from <a href="http://www.joenewyork.com/">Joe</a></p>
             
-            <p>By 'eck be reet tha what. Nah then nay lad gi' o'er bloomin' 'eck. A pint 'o mild nobbut a lad tha daft apeth nobbut a lad is that thine michael palin. Is that thine cack-handed will 'e 'eckerslike where's tha bin shu' thi gob. Tintintin tha knows. Nah then appens as maybe.</p>
+            <p>I am self taught and spend most of my time learning about javascript, sass and ruby on rails.</p>
 
 
 
@@ -155,8 +155,9 @@
 
       </div><!--/column-->
     </div><!--/row-->
+    </div>
 
-
+</div>
 
  
         
@@ -180,17 +181,17 @@
       
       <div class="small-5 small-offset-1 medium-5 medium-offset-1 large-offset-1 columns" id="slideLeft">
       
-        <h3>Put the kettle on</h3>
+        <h3>I studied Fine Art in college</h3>
         
-        <p>Be reet. Dahn t'coil oil chuffin' nora t'foot o' our stairs is that thine bloomin' 'eck chuffin' nora. Mardy bum bobbar chuffin' nora.</p>
+        <p>Visit my fine art portfolio; <a href="http://spectacularvernacular.net"/>here.</a>  I made this almost three years ago!</p>
       
       </div><!--/ column-->
     
       <div class="small-5 small-offset-1 medium-5 medium-offset-1 large-5 large-offset-1 columns" id="slideRight">
       
-        <h3>And he shot me</h3>
+        <h3>My portfolio site.</h3>
         
-        <p>Any rooad soft southern pansy nobbut a lad mardy bum shu' thi gob face like a slapped arse. Ee by gum mardy bum michael palin.</p>
+        <p>As soon as I finished this <a href="http://michaelrwiss.com"/>site</a>.  I decided it just wasn't up to date.</p>
       
       </div><!--/column-->
   </div><!--/row-->
@@ -201,22 +202,27 @@
 <footer class="band">
 
    <hr>
-
+       <div id="social">
        <div class="row">
 
          <div class="small-5 small-offset-1 columns">
 
-            <p>Copyright &copy; Michael Wiss 2014</p>
+            <p>Copyright &copy; Michael Wiss 2014 | Made with <img src="images/png.png"></p>
 
          </div><!--/ column-->
 
          <div class="small-5 small-offset-1 columns">
 
-         <p><a class="social-tuts" href="http://webdesign.tutsplus.com/author/ian-yates/">Tuts+</a> <a class="social-dribbble" href="http://dribbble.com/snaptin">Dribbble</a> <a class="social-facebook" href="https://www.facebook.com/webdesigntutsplus">Facebook</a></p>
+         <p>
+           <a class="social-git" href="https://github.com/MichaelWiss">Github</a> 
+           <a class="social-linkedin" href="http://www.linkedin.com/pub/michael-wiss/3b/55a/7a0">Linkedin</a>
+           <a class="social-portfolio" href="http://michaelrwiss.com/">Portfolio</a>
+        </p>
       
       </div><!--/ column-->
 
     </div><!--/ row-->
+    </div>
   
   </footer><!--/ main-->  
 
@@ -224,29 +230,25 @@
        </div>
 <script src="js/libs/jquery.js"></script>
 <script src="js/libs/skrollr.js"></script>
-  <script>
+<script src="js/build/global.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation/magellan.js"></script>
+
+
+
+
+<script>
   skrollr.init({
     forceHeight: false
   });
   </script>
-    
-<script src="js/build/global.min.js"></script>
-<script src="js/foundation.min.js"></script>
-<script src="js/foundation/foundation/magellan.js"></script>
-<script src="js/libs/jquery.fittext.js"></script>
 
-<script>
-  jQuery("#responsive_headline").fitText();
-</script>
-
-
-    <script>
+ <script>
       $(document).foundation();
        threshold: 0
     </script>
-  </main>
 
-  <script>
+    <script>
   $(window).scroll(function() {
     $('#slideLeft').each(function(){
     var imagePos = $(this).offset().top;
@@ -271,6 +273,14 @@
     });
   });
 </script>
+
+
+  </main>
+
+  
+
+
+
   </body>
 </html>
     

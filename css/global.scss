@@ -7,6 +7,8 @@
 
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento);
 
 $brand-color: #FEFAF3;
 
@@ -128,6 +130,8 @@ a.button {
 a.button:hover {
 	background: #D9C4A7;
 }
+#resume{font-family: 'Quattrocento', serif;}
+#resume h2{font-family: 'Gentium Basic', serif;}
 #name{
 	font-size: 1em;
 }
@@ -141,6 +145,10 @@ a.button:hover {
 	list-style-type:none;
 }
 #profileTitle{font-style:italic;}
+
+#about p {
+  text-indent: 1.5em;
+}
 #contact{margin:0;
 	padding-top:2em;}
 
@@ -165,15 +173,19 @@ footer {
 	margin: 0 1em;	
 }
 
-.social-tuts {
+
+
+
+
+.social-git {
 	color: #E36316;
 }
 
-.social-dribbble {
+.social-linkedin {
 	color: #c5376d;
 }
 
-.social-facebook {
+.social-portfolio {
 	color: #3B5998;
 }
 
@@ -231,6 +243,10 @@ font-family: 'Raleway', sans-serif;
 dl.sub-nav a:hover{color:#BA9F88; 
 
 }
+
+
+
+
 @media only screen and (min-width: 768px) { 
 header.band h1 {
 		font-size: 5em; /*52 / 16*/

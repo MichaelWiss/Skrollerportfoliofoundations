@@ -56,12 +56,92 @@
 
 
 <div class="band main">
-    <div class="row">
-      <div class="small-10 small-offset-1 columns" id="about">
+  <div class="row" id="name">
+
+     <div class="small-12 medium-6 medium-offset-1 large-6 large-offset-1 columns">
+            <h2>Michael Wiss</h2>
+            <h3>Frontend Web Developer</h3>
+     </div>
+        
+    <div class="small-12 medium-5 large-5 columns" id="contact">
+      <ul>
+        <li>michael.wiss@gmail.com</li>
+        <li><a href="www.michaelrwiss.com">www.michaelrwiss.com</a></li>
+        <li>(917) 627-4004</li>
+      </ul>
+     </div><!--end columns-->
+     <hr>
+    
+  </div><!--end row-->
+    
+      <div class="row" id="profile">
+         <div class="small-12 medium-3  large-3  columns" id="profileTitle"><h2>Professional Profile</h2></div>
+         <div class="small-12 medium-8 medium-offset-1 large-8 large-offset-1 columns">Educated as a fine artist I am now pursuing a career in web development. I believe that we are still in the nascent stage of our ability to express ourselves on the web and I am determined to be involved in it's development.</div>
+         <hr>
+      </div>
+
+      <div class="row" id="skills">
+        <div class="small-12 medium-3  large-3 columns"><h2>Skills</h2></div>
+          <div class="small-12 medium-3 large-3 large columns"><h2>Front End Web Development</h2><p>I have a solid foundation using HTML5 and CSS3 to build static and wordpress sites.</p></div>
+          <div class="small-12 medium-3 large-3 columns"><h2>Responsive Web Design</h2><p>I understand media queries and have a firm understanding of the latest grid frameworks .</p></div>
+          <div class="small-12 medium-3 large-3 columns"><h2>Ruby on Rails Student</h2><p>Most of my free time is spent devoted to learning Ruby on Rails.</p></div>
+      </div>
+
+
+      <div class="row" id="technical">
+         <div class="small-12 medium-3  large-3 columns"><h2>Technical</h2></div>
+          <div class="small-12 medium-3 large-3 columns">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          
+          <div class="small-12 medium-3 large-3 columns">
+            <ul>
+              <li>JQuery</li>
+              <li>Command Line</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="small-12 medium-3 large-3 columns">
+            <ul>
+              <li>Wordpress</li>
+              <li>Deployment</li>
+              <li>Very Basic Ruby on Rails</li>
+            </ul>
+          </div>
+      </div>
+      <div class="row" id="experience">
+          <div class="small-12 medium-3 large-3 columns"><h2 id="experienceH">Experience</h2></div>
+          <div class="small-12 medium-9 large-9 columns"><h2>WhyHunger</h2>
+                                                       <h3>Web Manager</h3>
+                                                       <h4>2012-2013</h4>
+                                                       <p>At WhyHunger I worked with all of the programs in the organization to support a variety of online properties. This included managing service requests, updates, analytics tracking and reporting and construction of new pages and features and independent wordpress sites. I also collaborated with outside vendors to ensure timely delivery and installation of products. I acted as the one and only web tech at WhyHunger and as consultant to the organization regarding web based communication goals.</p>
+          </div>
+          </div>
+        
+      <div class="row" id="education">
+          <div class="small-12 medium-3 large-3 columns"><h2 id="experienceH">Education</h2></div>
+          <div class="small-12 medium-9 large-9 columns"><h2>School of Visual Arts, NY, NY.</h2>
+                                                       <h3>Fine Arts — 3.83 GPA</h3>
+                                                       
+          </div>
+          </div>
+        
+
 
     
 
-      <h2>Mek 's a Brew Lad</h2>
+
+      <div class="row">
+        <div class="small-10 small-offset-1 columns" id="about">
+
+    
+
+      
         
          <p><strong>A pint 'o mild. Tell thi summat for nowt th'art nesh thee chuffin' nora eeh appens as maybe. Ey up is that thine god's own county. Be reet be reet nah then michael palin bloomin' 'eck gerritetten.</strong> Ah'll learn thi soft southern pansy. Any rooad soft southern pansy nobbut a lad mardy bum shu' thi gob face like a slapped arse. Ee by gum mardy bum michael palin. God's own county. Th'art nesh thee. Appens as maybe god's own county where's tha bin.  </p>
     
@@ -75,7 +155,7 @@
 
       </div><!--/column-->
   </div><!--/row-->
-</div><!--main-->
+
 
 
  
@@ -106,7 +186,7 @@
       
       </div><!--/ column-->
     
-      <div class="small-5 small-offset-1   columns">
+      <div class="small-5 small-offset-1   columns" id="slideRight">
       
         <h3>And he shot me</h3>
         
@@ -171,8 +251,21 @@
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+300) {
-        $(this).addClass("slideRight");
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("fadeIn");
+      }
+    });
+  });
+</script>
+
+<script>
+  $(window).scroll(function() {
+    $('#slideRight').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("fadeIn");
       }
     });
   });

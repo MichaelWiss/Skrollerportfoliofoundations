@@ -71,7 +71,7 @@ background-position:center;
 
 
 
-h1, h2, h3 {
+h1,  {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	text-align: center;
@@ -89,8 +89,7 @@ header.band h1 {
 
 h2 {
 	font-size: 1.6em;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	
 }
 
 h3 {
@@ -129,6 +128,28 @@ a.button {
 a.button:hover {
 	background: #D9C4A7;
 }
+#name{
+	font-size: 1em;
+}
+
+#name h2{
+	margin:0;
+	padding:0;
+}
+
+#name ul{
+	list-style-type:none;
+}
+#profileTitle{font-style:italic;}
+#contact{margin:0;
+	padding-top:2em;}
+
+#technical ul{list-style:square;}
+#technical li{border-bottom: 1px solid #ccc;
+line-height: 24px;}
+#experience{border-bottom: 1px solid #ccc;}
+#education{border-bottom: 1px solid #ccc;}
+
 
 footer {
 	font-size: 0.8em;
@@ -137,6 +158,8 @@ footer {
 
 
 #slideLeft{visibility: hidden;}
+#slideRight{visibility: hidden;}
+
 
 .last a {
 	margin: 0 1em;	
@@ -231,12 +254,22 @@ header.band h1 {
 	}
 
 .sub-nav a{font-size: 0.555rem;}
+#name h2{text-align:center; margin:0 auto;}
+
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
+
+#name h2{text-align:center;}
+#name h3{text-align:center;}
+#contact{text-align:center;}
+#profile{text-align:center;}
+#skills{text-align:center;}
+#technical{text-align:center;}
+
 
 }
 
@@ -248,7 +281,17 @@ header.band h1 {
     font-size: 2em;
 	}
 .sub-nav a{font-size: 0.555rem;}
+
+#name h2{text-align:center;}
+#name h3{text-align:center;}
+#contact{text-align:center;}
+#profile{text-align:center;}
+#skills{text-align:center;}
+#technical{text-align:center;}
+#experience{text-align:center;}
+
 }
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
